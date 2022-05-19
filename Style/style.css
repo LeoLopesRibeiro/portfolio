@@ -80,7 +80,7 @@ body {
   backdrop-filter: 15%;
   height: 100vh;
   flex-wrap: wrap;
-  background-image: url(/img/imagem_fundo.jpg);
+  background-image: url(/img/imagem_fundo.png);
 }
 #main{
   text-align: center;
