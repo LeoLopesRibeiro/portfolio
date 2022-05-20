@@ -91,7 +91,7 @@ a:hover {
   border-bottom: 2px solid #ffffff;
 }
 #margem{
-  height: au;
+  height: auto;
   width: 100%;
   bottom: 0;
   margin-top: 10px;
