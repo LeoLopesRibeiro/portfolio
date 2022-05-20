@@ -60,14 +60,6 @@ body {
   margin-bottom: 20px;
 }
 
-#imagem-fundo img {
-  position: relative;
-  top: 40%;
-  left: 40%;
-  transform: translate(-70%, -50%);
-  /* padding-top: 50%; */
-}
-
 /* altera a imagem de fundo */
 #imagem-fundo {
   /* background-size: cover; */
@@ -98,11 +90,38 @@ a {
 a:hover {
   border-bottom: 2px solid #ffffff;
 }
+#margem{
+  height: au;
+  width: 100%;
+  bottom: 0;
+  margin-top: 10px;
+  position: absolute;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
 
+#margem{
+  flex-direction:column;
+  background-color: #1c1c1c00 !important;
+  text-align: center;
+}
 #imagem-fundo {
   color: white;
 }
-
+/* iframe{
+  display: flex;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 5%;
+} */
+object{
+  width: 50%;
+  max-height:none;
+}
 #logo {
   letter-spacing: 2px;
   color: #ffffff;
@@ -112,6 +131,7 @@ a:hover {
 }
 
 #header {
+  font-size: 1.3rem;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -119,19 +139,33 @@ a:hover {
   padding: 1rem;
   justify-content: space-between;
   background-color: #ffffff00;
-}
-#copy {
-  margin-top: 30%;
-  background-color: #000000;
-}
 
+}
+i{
+  margin-right: 10px;
+}
+/* #imagem{
+  left: 17%;
+  margin-top: 15%;
+  position: relative;
+  display: flex;
+} */
 /* altera o layout do menu */
 #menu {
   display: flex;
   list-style: none;
   gap: 0.5rem;
 }
-
+.icones{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border-bottom: 2px solid transparent;
+}
+.icones:hover{
+  border-bottom: 2px solid #ffffff;
+}
 /* altera o layout do menu (a) */
 #menu a {
   display: block;
@@ -142,6 +176,8 @@ a:hover {
 #btn-mobile {
   display: none;
 }
+
+
 @media (max-width: 600px) {
   #btn-mobile {
     display: block;
@@ -241,5 +277,9 @@ a:hover {
 
     #teste ul {
         margin: 10px 0;
+    }
+    #margem{
+      width: 100%;
+      position: relative;
     }
 }
