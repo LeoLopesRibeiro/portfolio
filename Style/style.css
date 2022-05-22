@@ -81,7 +81,9 @@ body {
 img{
   border-radius: 5%;
 }
-
+.certificados{
+  margin-bottom: 20px;
+}
 /* altera a imagem de fundo */
 #imagem-fundo {
   /* background-size: cover; */
