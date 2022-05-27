@@ -89,6 +89,9 @@ body {
 .listProjetos h3{
   margin-bottom: 20px;
 }
+#escolaridade{
+  list-style: none;
+}
 #certificados{
   text-align: center;
   display: flex;
