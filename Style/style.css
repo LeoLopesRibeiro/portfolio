@@ -159,6 +159,7 @@ a:hover {
   position: relative;
 }
 .links{
+  margin-top: 50px;
   border:  2px solid white;
   padding: 5px 10px;
   border-radius: 13px;
