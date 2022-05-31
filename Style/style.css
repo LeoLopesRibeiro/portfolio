@@ -116,6 +116,7 @@ body {
 }
 img{
   border-radius: 5%;
+  margin-bottom: 40px;
 }
 /* altera a imagem de fundo */
 #imagem-fundo {
