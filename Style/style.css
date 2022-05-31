@@ -163,9 +163,16 @@ a:hover {
   position: relative;
 }
 .links{
-  font-size: 1.8rem;
-  font-weight:bolder;
   margin-top: 50px;
+  border:  2px solid white;
+  padding: 5px 10px;
+  border-radius: 13px;
+  font-size: 1.3rem;
+}
+.links:hover{
+  color: #000000;
+  background-color: white;
+  transition: 0.7s;
 }
 #margem{
   padding: 10px 0;
