@@ -114,10 +114,6 @@ body {
   align-items: center;
   color: black;
 }
-#curriculo{
-  font-size: 1.8rem;
-  
-}
 img{
   border-radius: 5%;
 }
@@ -163,7 +159,6 @@ a:hover {
   position: relative;
 }
 .links{
-  margin-top: 50px;
   border:  2px solid white;
   padding: 5px 10px;
   border-radius: 13px;
