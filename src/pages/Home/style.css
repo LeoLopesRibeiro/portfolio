@@ -1,150 +1,261 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Space+Mono&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 300;
 }
 
 .body {
-    margin: 0;
-    overflow-x:hidden;
-    background-color: #09001A;
-  }
-  section{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-  }
-  span{
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: #fff;
-    /* top: 10%; */
-    left: 20%;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1),
-    0 0 20px rgba(255, 255, 255, 1);
-    animation: animate 3s infinite;
-  }
-  span::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 300px;
-    height: 1px;
-    background: linear-gradient(90deg, #fff, transparent);
-  }
-  @keyframes animate{
-    0%{
-      transform: rotate(315deg) translateX(0);
-    }
-    70%{
-      opacity: 1;
-    }
-    100%{
-      transform: rotate(315deg) translateX(-1000px);
-      opacity: 0;
-    }
-  }
-  span:nth-child(1){
-    top:0;
-    right: 30;
-    animation-delay: 3;
-    left: initial;
-    animation-duration: 1s;
-  }
-  span:nth-child(2){
-    top:0;
-    left: initial;
-    right: 80px;
-    animation-delay: -0.2;
-    animation-duration: 3s;
-  }
-  span:nth-child(3){
-    top:80px;
-    left: initial;
-    right: 0;
-    animation-delay: 0.4s;
-    animation-duration: 2s;
-  }
-  span:nth-child(4){
-    top:0;
-    left: initial;
-    right: 180px;
-    animation-delay: 0.6s;
-    animation-duration: 1.5s;
-  }
-  span:nth-child(5){
-    top:0;
-    right: 200px;
-    animation-delay: 0.8s;
-    animation-duration: 1s;
-  }
-  .overflow {
-    top:170vh;
-    position: absolute;
-    /* background-color:#FFF; */
-  }
-  .reveal{
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #09001A;
+}
+
+section {
   position: absolute;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
 
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
+span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  /* top: 10%; */
+  left: 20%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 1);
+  animation: animate 3s infinite;
 }
-  .page {
-    width:100vw;
-    height:100vh;
-    perspective:1px;
-    perspective-origin: center center;
-    overflow-x:hidden;
-  }
-  #parallax {
-    transform-style: preserve-3d;
-    height:120vh;
-  }
-  
-  .image_layer {
-    background-position: bottom center;
-    background-size: cover;
-    background-repeat: repeat-x;
-    position: absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-  }
-  
-  #image-0 {
-    background-image: url('../../../public/assets/oceanMoon.png');
-    background-color: #09001A;
-    transform:translate3d(0px,-46px,-1.3px) scale(2.3);
-    /* background-position: center center;
+
+span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+.apresentation{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap;
+  line-height: 35px;
+  max-width: 500px;
+  flex-basis: auto;
+  text-align: left;
+}
+.textApresentation{
+  border-bottom: 2px solid #ffff;
+}
+#name{
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #7030ac, #2f48b5, #006fd0, #0092e1, #12b4eb);
+}
+.alignment{
+  display: flex;
+  margin: 10px;
+  width: 100vw;
+}
+.straight{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.asteroids{
+  width: 50%;
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+}
+.asteroid{
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  animation: asteroid-spin infinite 3s linear;
+  box-shadow: 2px 0 0 4px rgba(255, 255, 255, 0.1), 2px 0 2px 8px rgba(255, 255, 255, 0.1),
+    0 2px 20px rgba(255, 255, 255, 1);
+  border-radius: 60%;
+}
+.asteroid-down{
+  margin-top: 100px;
+}
+.straightVector{
+  width: 3px;
+}
+.laptop{
+  width: 30px;
+  height: 30px;
+  margin: 10px 0px 10px 0px;
+}
+span:nth-child(1) {
+  top: 0;
+  right: 30;
+  animation-delay: 3;
+  left: initial;
+  animation-duration: 1s;
+}
+
+
+span:nth-child(2) {
+  top: 0;
+  left: initial;
+  right: 80px;
+  animation-delay: -0.2;
+  animation-duration: 3s;
+}
+
+span:nth-child(3) {
+  top: 80px;
+  left: initial;
+  right: 0;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+}
+
+span:nth-child(4) {
+  top: 0;
+  left: initial;
+  right: 180px;
+  animation-delay: 0.6s;
+  animation-duration: 1.5s;
+}
+
+span:nth-child(5) {
+  top: 0;
+  right: 200px;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+}
+span:nth-child(6) {
+  top: 0;
+  right: 275px;
+  animation-delay: 0.8s;
+  animation-duration: 2s;
+}
+
+.overflow {
+  top: 130vh;
+  position: absolute;
+  /* background-color:#FFF; */
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+  perspective: 1px;
+  perspective-origin: center center;
+  overflow-x: hidden;
+}
+
+#parallax {
+  transform-style: preserve-3d;
+  height: 100vh;
+}
+
+.image_layer {
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#image-0 {
+  background-image: url('../../../public/assets/oceanMoon.png');
+  background-color: #09001A;
+  transform: translate3d(0px, -46px, -1.3px) scale(2.3);
+  /* background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; */
-  }
-  #image-1 {
-    background-image: url('../../../public/assets/oceanMontain.png');
-    transform:translate3d(0,-60px,-.7px) scale(1.7);
-    width: auto;
-    height: auto;
-    /* background-position: center center;
+}
+
+#image-1 {
+  background-image: url('../../../public/assets/oceanMontain.png');
+  transform: translate3d(0, -60px, -.7px) scale(1.7);
+  width: auto;
+  height: auto;
+  /* background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; */
+}
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transform: translate3d(0, 10vh, -1px) scale(1.3);
+  width :34px;
+  height: 55px;
+}
+.mouse {
+  width: 2px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  box-sizing: content-box;
+}
+.scroll {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { 
+    transform: translateY(0); opacity: 5; 
+  }
+  30%{
+    transform: translateY(0); opacity: 3; 
+  }
+  100% { 
+    transform: translateY(15px); opacity: 0;
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
   }
 
-  @media(max-width: 480px) {
-    span{
-      left: 100vw;
-    }
+  70% {
+    opacity: 1;
   }
+
+  100% {
+    transform: rotate(315deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+@keyframes asteroid-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media(max-width: 480px) {
+  span {
+    left: 100vw;
+  }
+}
