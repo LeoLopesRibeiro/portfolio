@@ -94,10 +94,53 @@ span::before {
 .straightVector{
   width: 3px;
 }
+.bigStraightVector{
+  width: 3px;
+  height: 400px;
+}
 .laptop{
   width: 30px;
   height: 30px;
   margin: 10px 0px 10px 0px;
+}
+.badge{
+  width: 30px;
+  height: 30px;
+  margin: 10px 0px 10px 0px;
+}
+.projectsTittle{
+ 
+}
+.projectsText{
+  margin-bottom: 30px;
+}
+.projects{
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+}
+.projectsCard{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  flex-basis: auto;
+}
+.badges{
+  border-top: 2px solid #fff;
+  margin-top: 80px;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
 }
 span:nth-child(1) {
   top: 0;

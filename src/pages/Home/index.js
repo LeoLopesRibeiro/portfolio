@@ -37,9 +37,12 @@ function Home(props) {
             <div className="straight">
                 <img className="straightVector" src="./assets/straightVector.svg" alt="Vector curve"></img>
                 <img className="laptop" src="./assets/laptop.svg" alt="Vector curve"></img>
+                <img className="bigStraightVector" src="./assets/bigStraightVector.svg" alt="Vector curve"></img>
+                <img className="badge" src="./assets/certificates.svg" alt="Certificate"></img>
+                <img className="bigStraightVector" src="./assets/bigStraightVector.svg" alt="Vector curve"></img>
             </div>
             <div className="apresentation">
-              <h2 id="name">Leonardo Lopes</h2>
+              <h1 id="name">Leonardo Lopes</h1>
               <div>
                 <p className="textApresentation">
                   A full stack programmer, focused on mobile, I create websites
@@ -47,11 +50,22 @@ function Home(props) {
                   My goal is to learn more about programming and further develop my skills
                 </p>
               </div>
-              <div>
-                <h3 className="Projects">
+              <div className="projects">
+                <h2 className="projectsTittle">
                   Projects
-                </h3>
-                <Card tittle={"Testee"} img={"./assets/asteroid.svg"} text={"Nada demais"}/>
+                </h2>
+                <p className="projectsText">I like to keep my mind busy, that's why I'm always doing projects to train my skills. Here are some of them (click in the icons to see more):</p>
+                <div className="projectsCard">
+                    <Card tittle={"El Churras"} img={"./assets/elchurrasIcon.png"} text={"This project was done together with my friends from SENAI, the project consists of an event expense calculator"}/>
+                    <Card tittle={"Storm App"} img={"./assets/stormApp.png"} text={"I made this app to test my use of API's, the goal was to create an interactive weather app"}/>
+                </div>
+              </div>
+              <div className="badges">
+                  <h2>Badges</h2>
+                  <div className="projectsCard">
+                    <Card tittle={"Cybersecurity"} img={"./assets/badgeCisco.png"} text={"The holder of this student-level credential has introductory knowledge of cybersecurity"}/>
+                    <Card tittle={"Azure AI"} img={"./assets/badgeMicrosoft.png"} text={"Earners certification have knowledge of machine learning (ML) and artificial intelligence (AI) concepts."}/>
+                </div>
               </div>
             <div>
             </div>

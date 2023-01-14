@@ -6,8 +6,20 @@
   box-sizing: border-box;
   font-weight: 300;
 }
+.cardBody{
+ display: flex;
+ flex-direction: column;
+height: 300px;
+}
 .cardBox{
     border: 2px solid #fff;
     height: 200px;
     width: 150px;
+}
+.tittle{
+  border-bottom: 2px solid #fff;
+  text-align: center;
+}
+.cardText{
+  max-width: 200px;
 }
