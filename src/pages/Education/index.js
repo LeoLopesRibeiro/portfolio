@@ -1,7 +1,7 @@
 function Education(){
     return(
         <div>
-
+                 <p>Nada</p>
         </div>
     )
 }

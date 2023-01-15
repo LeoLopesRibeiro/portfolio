@@ -9,7 +9,8 @@
 .cardBody{
  display: flex;
  flex-direction: column;
-height: 300px;
+ max-height: fit-content;
+/* margin-bottom: 110px; */
 }
 .cardBox{
     border: 2px solid #fff;

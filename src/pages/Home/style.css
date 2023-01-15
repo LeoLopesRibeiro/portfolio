@@ -302,3 +302,11 @@ span:nth-child(6) {
     left: 100vw;
   }
 }
+@media(max-width: 500px) {
+  .asteroids{
+    display: none;
+  }
+  .straight{
+    display: none;
+  }
+}

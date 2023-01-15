@@ -3,6 +3,7 @@ import Card from "../../components/Card";
 import "./style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 function Home(props) {
   AOS.init();
 
@@ -65,6 +66,7 @@ function Home(props) {
                   <div className="projectsCard">
                     <Card tittle={"Cybersecurity"} img={"./assets/badgeCisco.png"} text={"The holder of this student-level credential has introductory knowledge of cybersecurity"}/>
                     <Card tittle={"Azure AI"} img={"./assets/badgeMicrosoft.png"} text={"Earners certification have knowledge of machine learning (ML) and artificial intelligence (AI) concepts."}/>
+                    <Link to="/education">Education</Link>
                 </div>
               </div>
             <div>
