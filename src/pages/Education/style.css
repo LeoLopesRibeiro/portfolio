@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Space+Mono&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+.body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #09001A;
+}
+
+.sectionParallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.spanEducation {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  left: 30%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 1);
+  animation: animate 3s infinite;
+}
+
+.spanEducation::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+
+.alignment{
+  display: flex;
+  margin: 10px;
+  width: 100vw;
+}
+.straight1{
+  display: flex;
+  align-items: flex-start;
+  /* margin-left: 10px; */
+  margin-left: 20px;
+  /* margin-top: 80vh; */
+}
+.straight-right{
+    display: flex;
+    align-items: flex-start;
+    margin-right: 20px;
+    max-width: 100%;
+    height: 500px;
+}
+.end-straight{
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.vectorAlign{
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+}
+.align-text{
+  margin-top: 20vh;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  line-height: 35px;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.alignButton{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+}
+.alignButton .link{
+  margin: 10px;
+}
+.disableVector{
+  height: 1350px;
+}
+.certificates{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  max-width: 100%;
+  margin-left: 20px;
+  line-height: 50px;
+}
+.certificatesTittle{
+  color: #fff;
+}
+.linkCertificates{
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+.linkCertificates {
+  height: 100px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 1.5rem;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.linkCertificates::before,
+.linkCertificates::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-color: #9400d3;
+  transition: all 250ms ease-in-out;
+}
+
+.linkCertificates::before {
+  width: 2px;
+  height: 100px;
+  box-shadow: 298px 0 #2f48b5;
+}
+
+.linkCertificates::after {
+  height: 2px;
+  width: 300px;
+  box-shadow: 0 98px #2f48b5;
+}
+
+.linkCertificates:hover::before {
+  left: -10px;
+  box-shadow: 318px 0 #2f48b5;
+}
+
+.linkCertificates:hover::after {
+  top: -10px;
+  box-shadow: 0 118px #2f48b5;
+}
+.bigVector{
+  margin-top: 20vh;
+}
+.alignment-straight{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vectorSchooling{
+  width: 30px;
+  height: 30px;
+  margin: 10px 0px 10px 0px;
+}
+.vectorSchool{
+  margin-top: 15vh;
+  height: 300px;
+}
+.spanEducation:nth-child(1) {
+  top: 0;
+  right: 30;
+  animation-delay: 3;
+  left: initial;
+  animation-duration: 1s;
+}
+
+
+.spanEducation:nth-child(2) {
+  top: 0;
+  left: initial;
+  right: 80px;
+  animation-delay: -0.2;
+  animation-duration: 3s;
+}
+
+.spanEducation:nth-child(3) {
+  top: 80px;
+  left: initial;
+  right: 0;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+}
+
+.spanEducation:nth-child(4) {
+  top: 0;
+  left: initial;
+  right: 180px;
+  animation-delay: 0.6s;
+  animation-duration: 1.5s;
+}
+
+.spanEducation:nth-child(5) {
+  top: 0;
+  right: 200px;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+}
+.spanEducation:nth-child(6) {
+  top: 0;
+  right: 275px;
+  animation-delay: 0.8s;
+  animation-duration: 2s;
+}
+.overflow {
+  top: 130vh;
+  position: absolute;
+  /* width: 100vw; */
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+  perspective: 1px;
+  perspective-origin: center center;
+  overflow-x: hidden;
+}
+
+#parallaxEducation {
+  transform-style: preserve-3d;
+  height: 110vh;
+ 
+}
+
+.image_layer {
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.educationTittle{
+  margin-bottom: 10px;
+}
+.sectionParallax{
+  transform: translate3d(0, 10vh, -1px) scale(1.3);
+}
+#image-2 {
+  background-image: url('../../../public/assets/roadMoon.png');
+  background-color: #09001A;
+  transform: translate3d(0px, -46px, -1.3px) scale(2.3);
+  /* background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+#image-3 {
+  background-image: url('../../../public/assets/roadMontain.png');
+  transform: translate3d(0, -60px, -.7px) scale(1.7);
+  width: auto;
+  height: auto;
+  /* background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(315deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+@media(max-width: 480px) {
+  .vectorAlign{
+    display: none;
+  }
+  .disableVector{
+    display: none;
+  }
+  .certificates{
+    margin: 0;
+  }
+}

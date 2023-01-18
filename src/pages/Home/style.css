@@ -96,7 +96,7 @@ span::before {
 }
 .bigStraightVector{
   width: 3px;
-  height: 400px;
+  height: 500px;
 }
 .laptop{
   width: 30px;
@@ -107,9 +107,6 @@ span::before {
   width: 30px;
   height: 30px;
   margin: 10px 0px 10px 0px;
-}
-.projectsTittle{
- 
 }
 .projectsText{
   margin-bottom: 30px;
@@ -134,7 +131,7 @@ span::before {
 }
 .badges{
   border-top: 2px solid #fff;
-  margin-top: 80px;
+  margin-top: 30px;
   line-height: 35px;
   display: flex;
   flex-direction: column;
@@ -308,5 +305,8 @@ span:nth-child(6) {
   }
   .straight{
     display: none;
+  }
+  .projectsCard{
+    margin: 20px;
   }
 }

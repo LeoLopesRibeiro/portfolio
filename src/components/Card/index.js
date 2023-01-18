@@ -1,5 +1,5 @@
 import './style.css';
-
+import { Link } from 'react-router-dom';
 
 function Card(props) {
 
@@ -11,6 +11,7 @@ function Card(props) {
         </div>
         <div className='cardText'>
             <p>{props.text}</p>
+            <Link className='link' to={props.navigation}>See more</Link>
         </div>
         </div>
     )

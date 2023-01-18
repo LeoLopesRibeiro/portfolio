@@ -1,17 +1,10 @@
-import Header from "../../components/Header";
 import Card from "../../components/Card";
 import "./style.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
-function Home(props) {
-  AOS.init();
-
+function Home() {
   return (
     <div className="body">
       <div class="page">
         <div class="image" id="parallax">
-          {/* <Header className="header-off" /> */}
           <section>
             <span></span>
             <span></span>
@@ -55,18 +48,18 @@ function Home(props) {
                 <h2 className="projectsTittle">
                   Projects
                 </h2>
-                <p className="projectsText">I like to keep my mind busy, that's why I'm always doing projects to train my skills. Here are some of them (click in the icons to see more):</p>
+                <p className="projectsText">I like to keep my mind busy, that's why I'm always doing projects to train my skills. Here are some of them:</p>
                 <div className="projectsCard">
-                    <Card tittle={"El Churras"} img={"./assets/elchurrasIcon.png"} text={"This project was done together with my friends from SENAI, the project consists of an event expense calculator"}/>
-                    <Card tittle={"Storm App"} img={"./assets/stormApp.png"} text={"I made this app to test my use of API's, the goal was to create an interactive weather app"}/>
+                    <Card tittle={"El Churras"} img={"./assets/elchurrasIcon.png"} text={"This project was done together with my friends from SENAI, the project consists of an event expense calculator"} navigation={"/education"}/>
+                    <Card tittle={"Storm App"} img={"./assets/stormApp.png"} text={"I made this app to test my use of API's, the goal was to create an interactive weather app, and i trained routes"} navigation={"/education"}/>
                 </div>
               </div>
               <div className="badges">
                   <h2>Badges</h2>
                   <div className="projectsCard">
-                    <Card tittle={"Cybersecurity"} img={"./assets/badgeCisco.png"} text={"The holder of this student-level credential has introductory knowledge of cybersecurity"}/>
-                    <Card tittle={"Azure AI"} img={"./assets/badgeMicrosoft.png"} text={"Earners certification have knowledge of machine learning (ML) and artificial intelligence (AI) concepts."}/>
-                    <Link to="/education">Education</Link>
+                    <Card tittle={"Cybersecurity"} img={"./assets/badgeCisco.png"} text={"The holder of this student-level credential has introductory knowledge of cybersecurity"} navigation={"/education"}/>
+                    <Card tittle={"Azure AI"} img={"./assets/badgeMicrosoft.png"} text={"Earners certification have knowledge of machine learning (ML) and artificial intelligence (AI) concepts."} navigation={"/education"}/>
+                    {/* <Link to="/education">Education</Link> */}
                 </div>
               </div>
             <div>
